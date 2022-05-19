@@ -3,6 +3,7 @@ import './css/App.css';
 
 import {
     Form,
+    Response,
 } from '.';
 
 const App = () => {
@@ -10,8 +11,9 @@ const App = () => {
     const [response, setResponse] = useState('');
 
     return (
-        <div>
-            <Form response={ response } setResponse={ setResponse } />
+        <div id='app-container'>
+            <Form setResponse={ setResponse } />
+            <Response response={ response } />
         </div>
     ); // end return
 }; // App

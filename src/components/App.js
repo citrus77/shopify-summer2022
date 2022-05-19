@@ -1,24 +1,19 @@
-import React from 'react';
-import { Configuration, OpenAIApi } from 'openai';
-// import { Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import './css/App.css';
-// import {
-//     Home
-// } from '.';
-const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-const configuration = new Configuration({
-    apiKey,
-});
+
+import {
+    Form,
+} from '.';
 
 const App = () => {
+    
+    const [response, setResponse] = useState('');
+
     return (
-        <div id='app'>
-            <h1>Hello World!</h1>
+        <div>
+            <Form response={ response } setResponse={ setResponse } />
         </div>
-        // <Routes>
-        //     <Route path='/' element={<Home />} />
-        // </Routes>
-    );
-};
+    ); // end return
+}; // App
 
 export default App;

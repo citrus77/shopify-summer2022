@@ -13,14 +13,14 @@ const App = () => {
 
     useEffect(() => {        
         localStorage.setItem('responses', JSON.stringify(responses));
-    }, [responses]); // end useEffect
+    }, [responses]); 
 
     useLayoutEffect(() => {
         const storedResponses = localStorage.getItem('responses');
         if (storedResponses) {
             setResponses(JSON.parse(storedResponses));
-        } // end if
-    }, []); // end useLayoutEffect
+        } 
+    }, []); 
     
     return (
         <div id='app-container'>
@@ -30,9 +30,12 @@ const App = () => {
                 responses={ responses }
                 setResponses={ setResponses }
             />
-            <Responses responses={ responses } />
+            <Responses 
+                responses={ responses }
+                setResponses={ setResponses }
+            />
         </div>
-    ); // end return
-}; // App
+    ); 
+}; 
 
 export default App;

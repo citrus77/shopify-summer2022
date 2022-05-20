@@ -15,7 +15,7 @@ const callApi = async (prompt, engine) => {
             top_p: 1.0,
             frequency_penalty: 0.0,
             presence_penalty: 0.0,
-        } //data
+        }
 
         const response = await openai.createCompletion(engine, data);
 
@@ -23,10 +23,10 @@ const callApi = async (prompt, engine) => {
             return response.data.choices[0].text;
         } else {         
             return 'Error';
-        }; // end if/else
+        }; 
     } catch (error) {
         console.error(error);
     };
-}; // callApi
+}; 
 
 export default callApi;

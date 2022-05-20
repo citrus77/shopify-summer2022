@@ -5,8 +5,7 @@ const EngineSelect = ({ setEngine }) => {
     const _handleChange = (e) => {
         e.preventDefault();
         setEngine(e.target.value);
-    }; // end _handleChange
-
+    };
     return (
         <div>
             <label htmlFor='engine-select'>Select your overlord:</label>
@@ -17,7 +16,7 @@ const EngineSelect = ({ setEngine }) => {
                 <option value='text-ada-001'>Ada</option>
             </select>
         </div>
-    ); // end return
-};// end EngineSelect
+    ); 
+};
 
 export default EngineSelect;

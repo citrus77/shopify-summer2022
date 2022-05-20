@@ -14,11 +14,11 @@ const Form = ({ engine, responses, setResponses }) => {
                 resp: response,
                 date: new Date().toLocaleString(),
                 engine,
-            } // respObj
+            } 
             setResponses((responses) => [...responses, respObj]);
             setNewQuery('');
-        } // end if
-    }; // _handleQuery
+        } 
+    }; 
 
     return (
         <>
@@ -30,7 +30,7 @@ const Form = ({ engine, responses, setResponses }) => {
                 <button id='query-submit' type='submit'>Submit</button>
             </form>
         </>
-    ); // end return
-}; //Form
+    ); 
+}; 
 
 export default Form;

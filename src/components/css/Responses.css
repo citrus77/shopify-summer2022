@@ -1,0 +1,12 @@
+#resp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #006335;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;    
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 8px;
+    overflow: auto;
+}

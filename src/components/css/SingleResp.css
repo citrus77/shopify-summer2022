@@ -1,0 +1,28 @@
+.resp h4 {
+    color: #ffffff;
+    font-style: normal;
+    margin-right: 4px;
+}
+
+.resp {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.date {
+    font-size: .8rem;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+.prompt {
+    font-size: .8rem;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}

@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import './css/Form.css';
 import { callApi } from '.';
 
-const Form = ({ responses, setResponse, setResponses }) => {
-    const [engine, setEngine] = useState('text-davinci-002');
+const Form = ({ engine, responses, setResponses }) => {
     const [newQuery, setNewQuery] = useState('');
-
-    const newResponses = responses;
 
     const _handleQuery = async (e) => {
         e.preventDefault();
@@ -17,9 +14,8 @@ const Form = ({ responses, setResponse, setResponses }) => {
                 resp: response,
                 date: new Date().toLocaleString(),
             } // respObj
-            newResponses.push(respObj);
-            console.log(newResponses, 'newResponses');
-            setResponses(newResponses);
+            setResponses((responses) => [...responses, respObj]);
+            localStorage.setItem('responses', JSON.stringify(responses));
             setNewQuery('');
         } // end if
     }; // _handleQuery

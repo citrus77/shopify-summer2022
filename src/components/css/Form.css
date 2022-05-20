@@ -16,6 +16,7 @@
     background-color: #01baefff;
     border-top-left-radius: 0.5rem;    
     border-top-right-radius: 0.5rem;
+    border-bottom: 1px solid #0b4f6cff;
 }
 .query {
     width: 100%;

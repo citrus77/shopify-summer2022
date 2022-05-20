@@ -16,7 +16,7 @@ const Responses = ({ responses, setResponses }) => {
         }</div>);
     } else {
         return (<div id='resp-container'>
-                <span>No responses yet</span>
+                <span>Responses will appear here</span>
         </div>);
     } 
 }; 

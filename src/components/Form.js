@@ -13,9 +13,9 @@ const Form = ({ engine, responses, setResponses }) => {
                 prompt: newQuery,
                 resp: response,
                 date: new Date().toLocaleString(),
+                engine,
             } // respObj
             setResponses((responses) => [...responses, respObj]);
-            localStorage.setItem('responses', JSON.stringify(responses));
             setNewQuery('');
         } // end if
     }; // _handleQuery

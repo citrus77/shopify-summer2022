@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import './css/App.css';
 
 import {
@@ -9,24 +9,28 @@ import {
 
 const App = () => {
     const [responses, setResponses] = useState([]);
-    const [toggle, setToggle] = useState(false);    
     const [engine, setEngine] = useState('text-davinci-002');
+
+    console.log(responses)
+
+    useEffect(() => {        
+        localStorage.setItem('responses', JSON.stringify(responses));
+    }, [responses]); // end useEffect
 
     useLayoutEffect(() => {
         const storedResponses = localStorage.getItem('responses');
         if (storedResponses) {
             setResponses(JSON.parse(storedResponses));
         } // end if
-    }, [toggle]);
+    }, []); // end useLayoutEffect
     
     return (
         <div id='app-container'>
-            <Header />
+            <Header setEngine={ setEngine } />
             <Form
                 engine={ engine }            
                 responses={ responses }
                 setResponses={ setResponses }
-                toggle={ toggle }
             />
             <Responses responses={ responses } />
         </div>

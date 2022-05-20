@@ -1,8 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00000065;
+    border-radius: 10px;
+  }
+
 #resp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #006335;
+    background: #005463;
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 0.5rem;    

@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 8px;
+    padding: 0.4rem;
     background-color: #415a77ff;
 }
 .query {
@@ -19,22 +19,15 @@
     padding-top: 15px;
 }
 
-.label {
-    height: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #e0e1ddff;;
-}
-
 .query-entry {
     height: 1rem;
     padding: 0.5rem;
-    width: 65%;
+    width: 80%;
     background-color: #fbfbffbb;
     border: 1px solid #e0e1ddff;;
     border-radius: 50px;  
     word-wrap: break-word;
-    margin-left: 4px;
+    margin: 4px;
 }
 
 .query-entry:hover {
@@ -52,9 +45,7 @@
 }
 
 #query-submit {
-    align-items: center;
-    justify-content: center;
-    width: 128px;
+    width: 96px;
     height: 32px;
     padding: 0.5rem;
     background-color: #0d1b2aff;
@@ -63,7 +54,7 @@
     font-weight: bold;
     color: #e0e1ddff;;
     cursor: pointer;
-    margin: 8px 0;
+    margin: 0.4rem;
     box-shadow: 0 0.25rem 0.5rem #0d1b2aff;
 }
 

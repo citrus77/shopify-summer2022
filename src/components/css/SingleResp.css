@@ -34,12 +34,15 @@
     font-style: normal;
     margin-bottom: 8px;
     color: #0d1b2aff;
+    border-bottom: 1px solid #0d1b2aff;
+    padding-bottom: 10px;
 }
 
 .resp {
     display: flex;
     justify-content: space-evenly;
     color: #1b263bff;
+    padding-bottom: 3px;
 }
 
 .resp-card-info {
@@ -57,6 +60,10 @@
     background: #e0e1ddff;
     color: #1b263bff;
     margin-top: 4px;
+    border-top: 1px solid #1b263bff;
+    width: 100%;
+    align-self: center;
+    padding: 3px;
 }
 
 .delete-button:hover {

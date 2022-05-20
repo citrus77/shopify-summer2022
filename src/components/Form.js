@@ -23,11 +23,8 @@ const Form = ({ engine, responses, setResponses }) => {
     return (
         <>
             <form id='query-form' onSubmit={_handleQuery}>
-                <fieldset id='query'>
-                    <label className='label' htmlFor='query'>Prompt:</label>
-                    <input className='query-entry' type='text' placeholder='type your query' onChange = {(e) => setNewQuery(e.target.value)} value={ newQuery } />
-                </fieldset>
-                <button id='query-submit' type='submit' disabled={ !newQuery }>Submit</button>
+                <input className='query-entry' type='text' placeholder='type your query' onChange = {(e) => setNewQuery(e.target.value)} value={ newQuery } />
+                <button id='query-submit' type='submit' disabled={ !newQuery } text='Submit'>Submit</button>
             </form>
         </>
     ); 

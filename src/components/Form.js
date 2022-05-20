@@ -27,7 +27,7 @@ const Form = ({ engine, responses, setResponses }) => {
                     <label className='label' htmlFor='query'>Prompt:</label>
                     <input className='query-entry' type='text' placeholder='type your query' onChange = {(e) => setNewQuery(e.target.value)} value={ newQuery } />
                 </fieldset>
-                <button id='query-submit' type='submit'>Submit</button>
+                <button id='query-submit' type='submit' disabled={ !newQuery }>Submit</button>
             </form>
         </>
     ); 

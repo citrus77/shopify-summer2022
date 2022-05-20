@@ -76,3 +76,8 @@
     background-color: #00bee1ff;
     color: #0d1b2aff;
 }
+
+#query-submit:disabled {
+    color: rgba(224, 225, 221, 0.336);
+    background: #0d1b2a77;
+}

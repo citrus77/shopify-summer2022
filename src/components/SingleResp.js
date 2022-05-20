@@ -16,10 +16,12 @@ const SingleResp = ({ response, responses, setResponses }) => {
             </div>
             
             <span className='prompt'><h4>Prompt: </h4>{ prompt }</span>
-            <span className='resp'><h4>Response: </h4>{ resp }</span>
-            <button className='delete-button' onClick={ _handleDelete }>
-                <img src='./images/trash.png' height='32' width='32' alt='Delete' />
-            </button>
+            <div className='resp'>
+                <span><h4>Response: </h4>{ resp }</span>
+                <button className='delete-button' onClick={ _handleDelete }>
+                    <img src='./images/trash.png' height='32' width='32' alt='Delete' />
+                </button>
+            </div>
         </div>
     );
 }

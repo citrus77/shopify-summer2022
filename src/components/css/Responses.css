@@ -1,3 +1,10 @@
+/* CSS HEX
+--dark-pastel-green: #20bf55ff;
+--blue-sapphire: #0b4f6cff;
+--cyan-process: #01baefff;
+--ghost-white: #fbfbffff;
+--orange-peel: #ffa62bff; */
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -10,7 +17,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #00000065;
+    background: #ffa62bff;
     border-radius: 10px;
   }
 
@@ -18,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #005463;
+    background: #20bf55ff;
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 0.5rem;    

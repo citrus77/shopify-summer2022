@@ -11,8 +11,6 @@ const App = () => {
     const [responses, setResponses] = useState([]);
     const [engine, setEngine] = useState('text-davinci-002');
 
-    console.log(responses)
-
     useEffect(() => {        
         localStorage.setItem('responses', JSON.stringify(responses));
     }, [responses]); // end useEffect

@@ -9,7 +9,7 @@ const EngineSelect = ({ setEngine }) => {
 
     return (
         <div>
-            <label htmlFor='engine-select'>Select an overloard:</label>
+            <label htmlFor='engine-select'>Select your overloard:</label>
             <select id='engine-select' onChange={ _handleChange } >           
                 <option value='text-davinci-002'>Davinci</option>
                 <option value='text-curie-001'>Curie</option>

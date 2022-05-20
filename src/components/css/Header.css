@@ -10,6 +10,7 @@
 --shadow-blue: #778da9ff;
 --platinum: #e0e1ddff; */
 
+
 #header-container {
     display: flex;
     flex-direction: column;
@@ -21,4 +22,5 @@
 
 #header-container h1{
     font-family: 'Ostrich Sans', sans-serif;
+    color: #ff4d6dff;
 }

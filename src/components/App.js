@@ -3,20 +3,23 @@ import './css/App.css';
 
 import {
     Form,
-    Response,
+    Header,
+    Responses,
 } from '.';
 
-const App = () => {
-    
-    const [response, setResponse] = useState('');
+const App = () => {    
+    const [response, setResponse] = useState({});
     const [responses, setResponses] = useState([]);
-
-    console.log(responses, 'responses')
 
     return (
         <div id='app-container'>
-            <Form setResponse={ setResponse } setResponses={ setResponses }/>
-            <Response response={ response } />
+            <Header />
+            <Form
+                responses={ responses }
+                setResponse={ setResponse }
+                setResponses={ setResponses }
+            />
+            <Responses responses={ responses } />
         </div>
     ); // end return
 }; // App

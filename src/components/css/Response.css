@@ -1,0 +1,34 @@
+#resp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #006335;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;    
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 8px;
+}
+
+.current-resp {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.current-resp h4 {
+    color: #ffffff;
+    font-style: normal;
+    margin-right: 4px;
+}
+
+.query {
+    font-size: .8rem;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}

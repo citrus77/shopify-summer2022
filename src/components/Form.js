@@ -1,45 +1,34 @@
 import React, { useState } from 'react';
-import { Configuration, OpenAIApi } from 'openai';
 import './css/Form.css';
+import { callApi } from '.';
 
-const apiKey = process.env.REACT_APP_OPENAI_KEY;
-
-const Form = ({ setResponse }) => {
+const Form = ({ setResponse, setResponses }) => {
     const [engine, setEngine] = useState('text-davinci-002');
     const [newQuery, setNewQuery] = useState('');
 
-    const configuration = new Configuration({
-        apiKey,
-    });
-    const openai = new OpenAIApi(configuration);
+    const responses = [];
+    console.log(responses)
 
-    const handleSubmit = async (e) => {
+    const _handleQuery = async (e) => {
         e.preventDefault();
-
-        const data = {
-            prompt: newQuery,
-            temperature: 0.9,
-            max_tokens: 84,
-            top_p: 1.0,
-            frequency_penalty: 0.0,
-            presence_penalty: 0.0,
-        } //data
-
-        try {
-            const resp = await openai.createCompletion(engine, data);
-            if (resp) {
-                setResponse(resp.data.choices[0].text);
-            } else {
-                setResponse('Error')
-            }; // end if/else    
-        } catch (error) {
-            console.error(error);
-        }; // end try-catch        
-    }; // handleSubmit
+        const response = await callApi(newQuery, engine);
+        if (response) {
+            setResponse(response);
+            const respObj = {
+                query: newQuery,
+                response,
+            } // respObj
+            responses.push(respObj);
+            setResponses(responses);
+            setNewQuery('');
+        } else {
+            setResponse('Error');
+        }; // end if/else
+    }; // _handleQuery
 
     return (
         <>
-            <form id='query-form' onSubmit={handleSubmit}>
+            <form id='query-form' onSubmit={_handleQuery}>
                 <fieldset id='query'>
                     <label className='label' htmlFor='query'>Query:</label>
                     <input className='query-entry' type='text' placeholder='type your query' onChange = {(e) => setNewQuery(e.target.value)} />

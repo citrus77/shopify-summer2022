@@ -9,10 +9,13 @@ import {
 const App = () => {
     
     const [response, setResponse] = useState('');
+    const [responses, setResponses] = useState([]);
+
+    console.log(responses, 'responses')
 
     return (
         <div id='app-container'>
-            <Form setResponse={ setResponse } />
+            <Form setResponse={ setResponse } setResponses={ setResponses }/>
             <Response response={ response } />
         </div>
     ); // end return

@@ -1,10 +1,9 @@
-
 /* CSS HEX
---dark-pastel-green: #20bf55ff;
---blue-sapphire: #0b4f6cff;
---cyan-process: #01baefff;
---ghost-white: #fbfbffff;
---orange-peel: #ffa62bff; */
+--rich-black-fogra-29: #0d1b2aff;
+--oxford-blue: #1b263bff;
+--bdazzled-blue: #415a77ff;
+--shadow-blue: #778da9ff;
+--platinum: #e0e1ddff; */
 
 #query-form {
     display: flex;
@@ -13,10 +12,7 @@
     justify-content: center;
     width: 100%;
     padding-top: 8px;
-    background-color: #01baefff;
-    border-top-left-radius: 0.5rem;    
-    border-top-right-radius: 0.5rem;
-    border-bottom: 1px solid #0b4f6cff;
+    background-color: #415a77ff;
 }
 .query {
     width: 100%;
@@ -27,7 +23,7 @@
     height: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fbfbffff;
+    color: #e0e1ddff;;
 }
 
 .query-entry {
@@ -35,7 +31,7 @@
     padding: 0.5rem;
     width: 65%;
     background-color: #fbfbffbb;
-    border: 1px solid #fbfbffff;
+    border: 1px solid #e0e1ddff;;
     border-radius: 50px;  
     word-wrap: break-word;
     margin-left: 4px;
@@ -43,15 +39,15 @@
 
 .query-entry:hover {
     outline:none;
-    background: #fbfbffff;;
+    background: #e0e1ddff;;;
 }
 .query-entry:focus {
     outline: none;
-    background: #fbfbffff;;
+    background: #e0e1ddff;;;
 }
 
 .query-entry::placeholder {
-    color: #0b4f6cff;
+    color: #0d1b2aff;
     font-style: italic;
 }
 
@@ -61,20 +57,22 @@
     width: 128px;
     height: 32px;
     padding: 0.5rem;
-    background-color: #20bf55ff;
+    background-color: #0d1b2aff;
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #fbfbffff;
+    color: #e0e1ddff;;
     cursor: pointer;
     margin: 8px 0;
-    box-shadow: 0 0.25rem 0.5rem #0b4f6cff;
+    box-shadow: 0 0.25rem 0.5rem #0d1b2aff;
 }
 
 #query-submit:hover {
-    background-color: #20bf55ff;
+    background-color: #00bee1ff;
+    color: #e0e1ddff;;
 }
 
 #query-submit:active {
-    background-color: #01baefff;
+    background-color: #00bee1ff;
+    color: #0d1b2aff;
 }

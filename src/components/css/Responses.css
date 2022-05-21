@@ -43,7 +43,7 @@
     border: 1px thin #0d1b2aff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
   #resp-container {
       width: 100%;
   }

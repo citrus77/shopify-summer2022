@@ -34,7 +34,7 @@
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
     #app-container {
         border-radius: 0;
         padding: 0;

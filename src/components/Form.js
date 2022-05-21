@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/Form.css';
+import './css/Form-dark.css';
 import { callApi } from '.';
 
 const Form = ({ engine, responses, setResponses }) => {
@@ -23,7 +23,7 @@ const Form = ({ engine, responses, setResponses }) => {
     return (
         <>
             <form id='query-form' onSubmit={_handleQuery}>
-                <input className='query-entry' type='text' placeholder='type your query' onChange = {(e) => setNewQuery(e.target.value)} value={ newQuery } />
+                <input className='query-entry' type='text' placeholder='What is your query?' onChange = {(e) => setNewQuery(e.target.value)} value={ newQuery } />
                 <button id='query-submit' type='submit' disabled={ !newQuery } text='Submit'>Submit</button>
             </form>
         </>

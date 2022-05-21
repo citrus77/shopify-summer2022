@@ -1,0 +1,71 @@
+/* CSS HEX
+--rich-black-fogra-29: #0d1b2aff;
+--oxford-blue: #1b263bff;
+--bdazzled-blue: #415a77ff;
+--shadow-blue: #778da9ff;
+--platinum: #e0e1ddff; */
+
+.resp-card h4 {
+    font-style: normal;
+    margin-right: 4px;
+}
+
+.resp-card {
+    display: flex;
+    flex-direction: column;
+    color: #e0e1ddff;
+    background: #0d1b2aff;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 6px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 0.2rem;
+    width: 90%;
+    box-shadow: 0 0.25rem 0.5rem #0d1b2aff;
+}
+
+.prompt {
+    display: flex;
+    font-size: .8rem;
+    font-style: normal;
+    margin-bottom: 8px;
+    color: #e0e1ddff;
+    border-bottom: 1px solid #ff123e;
+    padding-bottom: 10px;
+}
+
+.resp {
+    display: flex;
+    justify-content: space-evenly;
+    color: #ff123e;
+    padding-bottom: 3px;
+}
+
+.resp-card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: .6rem;
+    margin-bottom: 8px;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #0d1b2aff;
+    color: #e0e1ddff;
+    margin-top: 4px;
+    border-top: 1px solid #ff123e;
+    width: 100%;
+    align-self: center;
+    padding-top: 9px;
+}
+
+.delete-button:hover {
+    color: #ff123e;
+}

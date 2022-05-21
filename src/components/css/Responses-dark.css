@@ -1,0 +1,66 @@
+/* CSS HEX
+--rich-black-fogra-29: #0d1b2aff;
+--oxford-blue: #1b263bff;
+--bdazzled-blue: #415a77ff;
+--shadow-blue: #778da9ff;
+--platinum: #e0e1ddff; */
+
+/* width */
+::-webkit-scrollbar {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 8px;
+    box-shadow: 0 0.25rem 0.5rem #0b4f6cff;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: #1b263bff;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem #0d1b2aff;
+  }
+
+#resp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #778da9ff;
+    height: 100%;
+    width: 90%;  
+    border-radius: 8px;
+    padding-top: 8px;
+    overflow: auto;
+    margin-bottom: .5rem;
+    border: 1px thin #0d1b2aff;
+}
+
+#clear {
+  background: #415a77ff;
+  height: 2rem;
+}
+
+.clear-all {
+  background: #415a77ff;
+  color: #e0e1ddff; 
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.clear-all:hover {
+  color: #ff123e;
+}
+
+@media screen and (max-width: 1080px) {
+  #resp-container {
+      width: 100%;
+  }
+}

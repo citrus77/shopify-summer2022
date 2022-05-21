@@ -42,6 +42,7 @@
 .query-entry::placeholder {
     color: #0d1b2aff;
     font-style: italic;
+    text-align: center;
 }
 
 #query-submit {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/SingleResp-dark.css';
+import './css/SingleResp.css';
 
 const SingleResp = ({ response, responses, setResponses }) => {
     const { date, engine, prompt, resp } = response;

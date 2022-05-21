@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/EngineSelect-dark.css';
+import './css/EngineSelect.css';
 
 const EngineSelect = ({ setEngine }) => {
     const _handleChange = (e) => {

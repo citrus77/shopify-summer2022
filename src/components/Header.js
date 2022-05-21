@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Header-dark.css';
+import './css/Header.css';
 import { EngineSelect } from '.';
 
 const Header = ({ setEngine }) => {

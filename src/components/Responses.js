@@ -1,6 +1,6 @@
 import React from 'react';
 import { uid } from 'react-uid';
-import './css/Responses-dark.css';
+import './css/Responses.css';
 import { SingleResp } from '.';
 
 const Responses = ({ responses, setResponses }) => {

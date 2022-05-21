@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
-import './css/App-dark.css';
+import './css/App.css';
 
 import {
     Form,

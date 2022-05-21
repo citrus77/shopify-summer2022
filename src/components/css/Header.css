@@ -1,15 +1,19 @@
+:root {
+    --color-darkest: #0d1b2aff;
+    --color-primary: #1b263bff;
+    --color-secondary: #415a77ff;
+    --color-accent: #778da9ff;
+    --color-font: #e0e1ddff;
+    --color-pop: #ff123eff;
+    --color-header: #ff4d6dff;
+    --color-scroll: #0b4f6cff;
+    --color-hover: #00bee1ff;
+}
+
 @font-face {
     font-family: 'Ostrich Sans';
     src: local('Ostrich Sans'), url('../../fonts/ostrich-sans-regular.ttf') format('truetype');
 }
-
-/* CSS HEX
---rich-black-fogra-29: #0d1b2aff;
---oxford-blue: #1b263bff;
---bdazzled-blue: #415a77ff;
---shadow-blue: #778da9ff;
---platinum: #e0e1ddff; */
-
 
 #header-container {
     display: flex;
@@ -17,11 +21,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0.8rem;
-    color: #fbfbffff;
+    color: var(--color-font);
     padding-top: 0.4rem;
 }
 
 #header-container h1{
     font-family: 'Ostrich Sans', sans-serif;
-    color: #ff4d6dff;
+    color: var(--color-header);
 }

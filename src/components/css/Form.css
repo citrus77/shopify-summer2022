@@ -1,9 +1,14 @@
-/* CSS HEX
---rich-black-fogra-29: #0d1b2aff;
---oxford-blue: #1b263bff;
---bdazzled-blue: #415a77ff;
---shadow-blue: #778da9ff;
---platinum: #e0e1ddff; */
+:root {
+    --color-darkest: #0d1b2aff;
+    --color-primary: #1b263bff;
+    --color-secondary: #415a77ff;
+    --color-accent: #778da9ff;
+    --color-font: #e0e1ddff;
+    --color-pop: #ff123eff;
+    --color-header: #ff4d6dff;
+    --color-scroll: #0b4f6cff;
+    --color-hover: #00bee1ff;
+}
 
 #query-form {
     display: flex;
@@ -12,7 +17,7 @@
     justify-content: center;
     width: 100%;
     padding: 0.4rem;
-    background-color: #415a77ff;
+    background-color: var(--color-secondary);
 }
 .query {
     width: 100%;
@@ -24,7 +29,7 @@
     padding: 0.5rem;
     width: 80%;
     background-color: #fbfbffbb;
-    border: 1px solid #e0e1ddff;
+    border: 1px solid var(--color-font);
     border-radius: 50px;  
     word-wrap: break-word;
     margin: 4px;
@@ -32,54 +37,54 @@
 
 .query-entry:hover {
     outline:none;
-    color: #e0e1ddff;
-    background: #0d1b2aff;
+    color: var(--color-font);
+    background: var(--color-darkest);
 }
 .query-entry:focus {
     outline: none;
-    color: #e0e1ddff;
-    background: #0d1b2aff;
+    color: var(--color-font);
+    background: var(--color-darkest);
 }
 
 .query-entry::placeholder {
-    color: #0d1b2aff;
+    color: var(--color-darkest);
     font-style: italic;
     text-align: center;
 }
 
 .query-entry::placeholder:hover {
-    color: #e0e1ddff;
+    color: var(--color-font);
 }
 
 .query-entry::placeholder:focus {
-    color: #e0e1ddff;
+    color: var(--color-font);
 }
 
 #query-submit {
     width: 96px;
     height: 32px;
     padding: 0.5rem;
-    background-color: #0d1b2aff;
+    background-color: var(--color-darkest);
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #e0e1ddff;;
+    color: var(--color-font);
     cursor: pointer;
     margin: 0.4rem;
-    box-shadow: 0 0.25rem 0.5rem #0d1b2aff;
+    box-shadow: 0 0.25rem 0.5rem var(--color-darkest);
 }
 
 #query-submit:hover {
-    background-color: #00bee1ff;
-    color: #e0e1ddff;;
+    background-color: var(--color-hover);
+    color: var(--color-font);
 }
 
 #query-submit:active {
-    background-color: #00bee1ff;
-    color: #0d1b2aff;
+    background-color: var(--color-hover);
+    color: var(--color-darkest);
 }
 
 #query-submit:disabled {
-    color: rgba(224, 225, 221, 0.336);
-    background: #0d1b2a77;
+    color: #e0e1dd56;
+    background: #0d1b2aa4;
 }

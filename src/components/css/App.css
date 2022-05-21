@@ -3,20 +3,25 @@
     src: local('San Francisco Pro'), url('../../fonts/SFProDisplay-Regular.ttf') format('truetype');
 }
 
-/* CSS HEX
---rich-black-fogra-29: #0d1b2aff;
---oxford-blue: #1b263bff;
---bdazzled-blue: #415a77ff;
---shadow-blue: #778da9ff;
---platinum: #e0e1ddff; */
+:root {
+    --color-darkest: #0d1b2aff;
+    --color-primary: #1b263bff;
+    --color-secondary: #415a77ff;
+    --color-accent: #778da9ff;
+    --color-font: #e0e1ddff;
+    --color-pop: #ff123eff;
+    --color-header: #ff4d6dff;
+    --color-scroll: #0b4f6cff;
+    --color-hover: #00bee1ff;
+}
 
 #app {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:#1b263bff;
-    background: linear-gradient(to bottom, #778da9ff, #1b263bff);
+    background-color: var(--color-darkest);
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-primary));
     height: 100vh;
     font-family: 'San Francisco Pro', sans-serif;
 }
@@ -28,9 +33,9 @@
     height: 90vh;
     width: 85vw;
     padding: 0.5rem;
-    background-color: #415a77ff;
+    background-color: var(--color-secondary);
     border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem #0d1b2aff;
+    box-shadow: 0 0.5rem 1rem var(--color-darkest);
     overflow-x: hidden;
 }
 

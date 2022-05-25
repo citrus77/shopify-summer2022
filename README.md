@@ -1,7 +1,7 @@
 # Shopify Frontend Challenge
 # Fun with GPT-3
 
-To run this locally you must have Node installed.
+To run this locally you must have Node.js installed.
 Clone this repository and from the project directory run "npm install".
 
 Create a .env file in the root directory and create an environment variable named "REACT_APP_OPENAI_KEY"

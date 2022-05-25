@@ -1,4 +1,4 @@
-# shopify frontend challenge
+# Shopify Frontend Challenge
 # Fun with GPT-3
 
 To run this locally you must have Node installed.

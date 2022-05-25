@@ -1,6 +1,6 @@
 # Shopify Frontend Challenge: Fun with GPT-3
 
-This project was built using Node.js and React.js.
+This project was built using Node.js and React.js using the OpenAI API.
 
 To run this project locally you must have Node.js installed.
 Clone this repository, and from the project directory type "npm install" in your terminal/command line.
